@@ -20,7 +20,7 @@ tar –xzvf chromium.r197479.tgz
 ```
 
 ## Build chromium with ninja
-* Use following the git instruction to download the depot_tools for building chromium
+* Use following git instructions to download the depot_tools for building chromium
 ```
 git init
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
