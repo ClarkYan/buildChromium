@@ -25,6 +25,15 @@ tar –xzvf chromium.r197479.tgz
 git init
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 ```
+* After finish installing the depot_tools, you need to move the whole file to the directory of “src” (“src” is belong to your chromium project)
+*	Modify the ```~/.bashrc``` and Add the depot_tools to your PATH
+```
+export PATH=$PATH: path/to/depot_tools
+```
+* Install all of the library dependencies Under the directory of chromium
+```
+sudo ./src/build/install-build-deps.sh 
+```
 
 
 
