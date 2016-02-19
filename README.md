@@ -54,6 +54,36 @@ ninja -C out/Debug chrome    ---Debug mode
 ninja -C out/Release chrome   ---Release mode
 ```
 
+## Run the chromium browser
+```
+ninja -C out/Release base_unittests
+```
+```
+export TSAN_OPTIONS="external_symbolizer_path=third_party/llvm-build/Release+Asserts/bin/llvm-symbolizer"
+```
+```
+out/Release/base_unittests --no-sandbox 2>&1 | tee log
+```
+```
+TSAN_OPTIONS="atexit_sleep_ms=200 flush_memory_ms=2000 $TSAN_OPTIONS"
+```
+```
+out/Release/chrome --no-sandbox  2>&1 | tee log
+```
+
+## Build the chromium with TSAN v2.0
+```
+TSAN_OPTIONS="history_size=7 external_symbolizer_path=third_party/llvm-build/Release+Asserts/bin/llvm-symbolizer suppressions=tools/valgrind/tsan_v2/suppressions.txt report_signal_unsafe=0 report_thread_leaks=0 print_suppressions=1" 
+```
+```
+out/Release/browser_tests  --no-sandbox --child-clean-exit  --gtest_filter=AutofillOptionsWebUITest.testOpenAutofillOptions
+```
+
+## Future work
+Now you have finished all the required steps. You can do the further analysis as you wish.
+If you've encounted any problems, send an email to Clark YAN(me) at clarkyan1993@gmail.com or opening an issue on github.
+
+
 
 
 
