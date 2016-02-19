@@ -29,7 +29,7 @@ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
 *	Modify the ```~/.bashrc``` and Add the depot_tools to your PATH
 ```
-export PATH=$PATH: path/to/depot_tools
+export PATH=$PATH:path/to/depot_tools
 ```
 * Install all of the library dependencies under the directory of chromium
 ```
