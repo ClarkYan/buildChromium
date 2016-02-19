@@ -81,7 +81,7 @@ out/Release/browser_tests  --no-sandbox --child-clean-exit  --gtest_filter=Autof
 
 ## Future work
 Now you have finished all the required steps. You can do the further analysis as you wish.
-If you've encounted any problems, send an email to Clark YAN(me) at clarkyan1993@gmail.com or opening an issue on github.
+If you've encounted any problems, please do not hesitate to send an email to Clark YAN(me) at clarkyan1993@gmail.com or opening an issue on github.
 
 
 
