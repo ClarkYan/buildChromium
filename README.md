@@ -1,5 +1,5 @@
 # buildChromium
-This project is a guideline about how to build chromium with ninja and TSAN v2.0 in order to get a data race report to do further analysis
+This project is a tool for building chromium with ninja and TSAN v2.0 friendly in order to get a data race report to do further analysis
 
 This project can be recommended for building on Ubuntu 12.04
 ## Install the git instruction on your operating system
